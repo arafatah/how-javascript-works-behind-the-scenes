@@ -1,5 +1,5 @@
 'use strict';
-/*
+
 const calcAge = (birthYear) => {
 	const age = 2037 - birthYear;
     
@@ -12,5 +12,5 @@ const calcAge = (birthYear) => {
 }
 
 const firstName = 'Jonas';
-calcAge(1991);*/
+calcAge(1991);
 
