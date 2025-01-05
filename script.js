@@ -90,6 +90,7 @@ const Arafat2 = {
     const isGenZ = () => {
       console.log(this.year >= 1998 && this.year <= 2010);
     };
+    
     isGenZ();
   },
   // Fix: just write this on regular function
@@ -97,3 +98,5 @@ const Arafat2 = {
 };
 
 Arafat2.greet();
+
+// const arafatClone = structuredClone(Arafat2);
