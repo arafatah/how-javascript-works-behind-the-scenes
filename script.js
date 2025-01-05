@@ -22,7 +22,7 @@ var me = 'Jonas';
 let job = 'teacher';
 const year = 1996; */
 
-// functions - can't declare before initialize. Ex😔
+// functions - can't declare before initialize. Except declaration function😔
 /* console.log(addDecl(5, 4));
 console.log(addExpr(5, 4));
 console.log(addArrow(5, 4)); */
