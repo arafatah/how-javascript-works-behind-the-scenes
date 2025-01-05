@@ -90,7 +90,7 @@ const Arafat2 = {
     const isGenZ = () => {
       console.log(this.year >= 1998 && this.year <= 2010);
     };
-    
+
     isGenZ();
   },
   // Fix: just write this on regular function
@@ -100,3 +100,31 @@ const Arafat2 = {
 Arafat2.greet();
 
 // const arafatClone = structuredClone(Arafat2);
+
+// Destructuring
+const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto', 'Pasta'],
+
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+};
+
+let [main, , secondary] = restaurant.categories;
+console.log(main, secondary);
+
+[secondary, main] = [main, secondary];
+console.log(main, secondary);
+
+const [starter, mainCourse] = restaurant.order(2, 0);
+// console.log(restaurant.order(2, 0));
+console.log(starter, mainCourse)
+
+// Nested destructure need, same way of destructure. 
+const nested = [2, 4, [5,6]]
+const [i, , [j,k]] = nested;
+console.log(i, j, k)
