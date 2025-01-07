@@ -128,3 +128,12 @@ console.log(starter, mainCourse)
 const nested = [2, 4, [5,6]]
 const [i, , [j,k]] = nested;
 console.log(i, j, k)
+
+
+
+// Iterables: arrays, strings, maps, sets. NOT objects
+const str = 'Jonas';
+const letters = [...str, ' ', 'S.'];
+console.log(letters);
+console.log(...str);
+// console.log(`${...str} Schmedtmann`);
